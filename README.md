@@ -1,5 +1,6 @@
 <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
-***
+
+---------------------------------------
 
 A cloud-native database for building mission-critical applications. This repository contains the Community Edition of the YugaByte Database.
 
