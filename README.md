@@ -11,7 +11,10 @@ A cloud-native database for building mission-critical applications. This reposit
 - [Getting Started](#getting-started)
 - [Developing Apps](#developing-apps)
 - [Building YugaByte code](#building-yugabyte-code)
-    - [Prerequesites for CentOS 7](#prerequisites-for-centos-7)
+    - [Prerequisites for CentOS 7](#prerequisites-for-centos-7)
+    - [Prerequisites for Mac OS X](#prerequisites-for-mac-os-x)
+    - [Prerequisites for drivers and sample apps](#prerequisites-for-drivers-and-sample-apps)
+    - [Building the code](#building-the-code)
 - [Reporting Issues](#reporting-issues)
 - [Contributing](#contributing)
 - [License](#license)
@@ -60,7 +63,7 @@ Once again, please post your questions or comments to our [community forum](http
 
 ## Building YugaByte code
 
-### Prerequesites for CentOS 7
+### Prerequisites for CentOS 7
 
 CentOS 7 is the main recommended development and production platform for YugaByte.
 
@@ -96,7 +99,7 @@ git clone git@github.com:linuxbrew/brew.git ~/.linuxbrew-yb-build
 We don't need to add `~/.linuxbrew-yb-build/bin` to PATH. The build scripts will automatically
 discover this Linuxbrew installation.
 
-### Prerequesites for Mac OS X
+### Prerequisites for Mac OS X
 
 Install [Homebrew](https://brew.sh/):
 
@@ -115,7 +118,7 @@ Also YugaByte build scripts rely on Bash 4. Make sure that `which bash` outputs
 `/usr/local/bin/bash` before proceeding. You may need to put `/usr/local/bin` as the first directory
 on PATH in your `~/.bashrc` to achieve that.
 
-### All platforms: Java prerequisites
+### Prerequisites for drivers and sample apps
 
 YugaByte core is written in C++, but the repository contains Java code needed to run sample
 applications. To build the Java part, you need:
@@ -130,7 +133,7 @@ if you've installed Maven into `~/tools/apache-maven-3.5.0`.
 
 For building YugaByte Java code, you'll need to install Java and Apache Maven.
 
-### Java Driver
+**Java driver**:
 
 YugaByte and Apache Cassandra use different approaches to split data between nodes. In order to
 route client requests to the right server without extra hops, we provide a [custom
