@@ -11,6 +11,7 @@ A cloud-native database for building mission-critical applications. This reposit
 - [Getting Started](#getting-started)
 - [Developing Apps](#developing-apps)
 - [Building YugaByte code](#building-yugabyte-code)
+    - [Prerequesites for CentOS 7](#prerequisites-for-centos-7)
 - [Reporting Issues](#reporting-issues)
 - [Contributing](#contributing)
 - [License](#license)
