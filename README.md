@@ -3,7 +3,7 @@
 
 A cloud-native database for building mission-critical applications. This repository contains the Community Edition of the YugaByte Database.
 
-**Table of Contents**
+## Table of Contents
 
 - [About YugaByte](#about-yugabyte)
 - [Supported APIs](#supported-apis)
