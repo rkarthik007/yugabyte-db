@@ -8,6 +8,11 @@ A cloud-native database for building mission-critical applications. This reposit
 - [About YugaByte](#about-yugabyte)
 - [Supported APIs](#supported-apis)
 - [Getting Started](#getting-started)
+- [Developing Apps](#developing-apps)
+- [Building YugaByte code](#building-yugabyte-code)
+- [Reporting Issues](#reporting-issues)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## About YugaByte
 
@@ -21,10 +26,11 @@ In terms of data model and APIs, YugaByte supports the following on top of a com
 * Cassandra Query Language (CQL) - with enhancements to support ACID transactions
 * Redis - as a full database with automatic sharding, clustering, elasticity
 * PostgreSQL (in progress) - with linear scalability, high availability and fault tolerance
+**Note**: You can run your Apache Spark applications on YugaByte DB
 
 YugaByte DB is driver compatible with Apache Cassandra CQL and Redis - you can run existing applications written using existing open-source client drivers.
 
-**Note**: distributed transactions are supported in the core data platform. The work to expose this as strongly consistent secondary indexes, multi-table/row ACID operations and SQL support is actively in progress. You can follow the progress of these features in our [community forum](https://forum.yugabyte.com/).
+The distributed transactions feature is supported in the core data platform. The work to expose this as strongly consistent secondary indexes, multi-table/row ACID operations and SQL support is actively in progress. You can follow the progress of these features in our [community forum](https://forum.yugabyte.com/).
 
 ## Getting Started
 
@@ -37,9 +43,20 @@ Here are a few resources for getting started with YugaByte:
 
 Cannot find what you are looking for? Have a question? We love to hear from you - please post your questions or comments to our [community forum](https://forum.yugabyte.com).
 
-## Build Prerequisites
+## Developing Apps
 
-### CentOS 7
+Here is a tutorial on implementing a simple Hello World application for YugaByte CQL and Redis in different languages:
+* [Java](https://docs.yugabyte.com/develop/client-drivers/java/) using maven
+* [NodeJS](https://docs.yugabyte.com/develop/client-drivers/nodejs/) for Javascript
+* [Python](https://docs.yugabyte.com/develop/client-drivers/python/)
+
+We are constantly adding documentation on how to build apps using the client drivers in various languages, as well as the ecosystem integrations we support. Please see [our app-development docs](https://docs.yugabyte.com/develop/) for the latest information.
+
+Once again, please post your questions or comments to our [community forum](https://forum.yugabyte.com) if you need something.
+
+## Building YugaByte code
+
+### Prerequesites for CentOS 7
 
 CentOS 7 is the main recommended development and production platform for YugaByte.
 
@@ -75,7 +92,7 @@ git clone git@github.com:linuxbrew/brew.git ~/.linuxbrew-yb-build
 We don't need to add `~/.linuxbrew-yb-build/bin` to PATH. The build scripts will automatically
 discover this Linuxbrew installation.
 
-### Mac OS X
+### Prerequesites for Mac OS X
 
 Install [Homebrew](https://brew.sh/):
 
@@ -127,7 +144,7 @@ using our driver by adding the following Maven dependency to your application:
 </dependency>
 ```
 
-## Building YugaByte code
+### Building the code
 
 Assuming this repository is checked out in `~/code/yugabyte-db`, do the following:
 
@@ -140,13 +157,6 @@ The above command will build the release configuration, put the C++ binaries in
 `build/release-gcc-dynamic-community`, and will also create the `build/latest` symlink to that
 directory. Then it will build the Java code as well. The `--with-assembly` flag tells the build
 script to build the `yb-sample-apps.jar` file containing sample Java apps.
-
-## Running a Local Cluster
-
-Now you can follow the [Communty Edition Quick Start / Create local cluster
-](http://docs.yugabyte.com/community-edition/quick-start/#create-local-cluster) tutorial
-to create a local cluster and test it using Apache CQL shell and Redis clients, as well as run
-the provied Java sample apps.
 
 ## Reporting Issues
 
