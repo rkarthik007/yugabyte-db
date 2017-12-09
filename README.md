@@ -1,5 +1,5 @@
 <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
-=======================================================================
+-----
 
 A cloud-native database for building mission-critical applications. This repository contains the Community Edition of the YugaByte Database.
 
@@ -18,7 +18,8 @@ A cloud-native database for building mission-critical applications. This reposit
 
 YugaByte offers **both** SQL and NoSQL in a single db. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
 
-Read more about YugaByte in our [docs](https://docs.yugabyte.com/introduction/overview/).
+* See how YugaByte [compares with other databases](https://docs.yugabyte.com/comparisons/).
+* Read more about YugaByte in our [docs](https://docs.yugabyte.com/introduction/overview/).
 
 ## Supported APIs
 
