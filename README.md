@@ -37,7 +37,7 @@ The distributed transactions feature is supported in the core data platform. The
 Here are a few resources for getting started with YugaByte:
 
 * [Quick start guide](http://docs.yugabyte.com/community-edition/quick-start/) - install, create a local cluster and read/write from YugaByte.
-* [Explore core features](https://docs.yugabyte.com/explore/) - automatic sharding and rebalancing, linear scalability, fault tolerance, tunable reads and others.
+* [Explore core features](https://docs.yugabyte.com/explore/) - automatic sharding & rebalancing, linear scalability, fault tolerance, tunable reads etc.
 * [Real world apps](https://docs.yugabyte.com/develop/realworld-apps/) - how real-world, end-to-end applications can be built using YugaByte DB.
 * [Architecture docs](https://docs.yugabyte.com/architecture/) - to understand how YugaByte was designed and how it works
 
