@@ -1,8 +1,14 @@
-# YugaByte Database
+<img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
+
+- [What is YugaByte](#what-is-yugabyte)
+
+## What is YugaByte?
 
 YugaByte is a cloud-native database for mission-critical applications. This repository contains the
 Community Edition of the YugaByte Database. YugaByte supports Apache Cassandra Query Language and
-Redis APIs, with SQL support on the roadmap.
+Redis APIs, PostgreSQL support is in progress.
+
+Read more about YugaByte in our [docs](https://docs.yugabyte.com/introduction/overview/).
 
 Here are a few resources for getting started with YugaByte:
 * [Community Edition Quick Start](http://docs.yugabyte.com/community-edition/quick-start/) to
