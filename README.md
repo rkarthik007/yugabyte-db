@@ -1,25 +1,41 @@
 <img src="https://www.yugabyte.com/images/yblogo_whitebg.3fea4ef9.png" align="center" height="56" alt="YugaByte DB"/>
+==========================================================================
 
-- [What is YugaByte](#what-is-yugabyte)
+A cloud-native database for building mission-critical applications. This repository contains the Community Edition of the YugaByte Database.
 
-## What is YugaByte?
+**Table of Contents**
 
-YugaByte is a cloud-native database for mission-critical applications. This repository contains the
-Community Edition of the YugaByte Database. YugaByte supports Apache Cassandra Query Language and
-Redis APIs, PostgreSQL support is in progress.
+- [About YugaByte](#about-yugabyte)
+- [Supported APIs](#supported-apis)
+- [Getting Started](#getting-started)
+
+## About YugaByte
+
+YugaByte offers **both** SQL and NoSQL in a single db. It is meant to be a system-of-record/authoritative database that applications can rely on for correctness and availability. It allows applications to easily scale up and scale down in the cloud, on-premises or across hybrid environments without creating operational complexity or increasing the risk of outages.
 
 Read more about YugaByte in our [docs](https://docs.yugabyte.com/introduction/overview/).
 
+## Supported APIs
+
+In terms of data model and APIs, YugaByte supports the following on top of a common core data platform: 
+* Cassandra Query Language (CQL) - with enhancements to support ACID transactions
+* Redis - as a full database with automatic sharding, clustering, elasticity
+* PostgreSQL (in progress) - with linear scalability, high availability and fault tolerance
+
+YugaByte DB is driver compatible with Apache Cassandra CQL and Redis - you can run existing applications written using existing open-source client drivers.
+
+**Note**: distributed transactions are supported in the core data platform. The work to expose this as strongly consistent secondary indexes, multi-table/row ACID operations and SQL support is actively in progress. You can follow the progress of these features in our [community forum](https://forum.yugabyte.com/).
+
+## Getting Started
+
 Here are a few resources for getting started with YugaByte:
-* [Community Edition Quick Start](http://docs.yugabyte.com/community-edition/quick-start/) to
-  get started with YugaByte using a pre-built YugaByte Community Edition package.
-* See [YugaByte Documentation](http://docs.yugabyte.com/) for architecture,
-  production deployment options and languages supported. In particular, see
-  [Architecture / Concepts](http://docs.yugabyte.com/architecture/concepts/) and
-  [Architecture / Core Functions](http://docs.yugabyte.com/architecture/core-functions/) sections.
-* See [www.yugabyte.com](https://www.yugabyte.com/) for general information about YugaByte.
-* Check out the [YugaByte Community Forum](http://forum.yugabyte.com) and post your questions
-  or comments.
+
+* [Quick start guide](http://docs.yugabyte.com/community-edition/quick-start/) - install, create a local cluster and read/write from YugaByte.
+* [Explore core features](https://docs.yugabyte.com/explore/) - automatic sharding and rebalancing, linear scalability, fault tolerance, tunable reads and others.
+* [Real world apps](https://docs.yugabyte.com/develop/realworld-apps/) - how real-world, end-to-end applications can be built using YugaByte DB.
+* [Architecture docs](https://docs.yugabyte.com/architecture/) - to understand how YugaByte was designed and how it works
+
+Cannot find what you are looking for? Have a question? We love to hear from you - please post your questions or comments to our [community forum](https://forum.yugabyte.com).
 
 ## Build Prerequisites
 
