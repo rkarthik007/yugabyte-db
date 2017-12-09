@@ -23,9 +23,10 @@ Read more about YugaByte in our [docs](https://docs.yugabyte.com/introduction/ov
 ## Supported APIs
 
 In terms of data model and APIs, YugaByte supports the following on top of a common core data platform: 
-* Cassandra Query Language (CQL) - with enhancements to support ACID transactions
-* Redis - as a full database with automatic sharding, clustering, elasticity
+* [Cassandra Query Language (CQL)](https://docs.yugabyte.com/api/cql/) - with enhancements to support ACID transactions in the works
+* [Redis](https://docs.yugabyte.com/api/redis/) - as a full database with automatic sharding, clustering, elasticity
 * PostgreSQL (in progress) - with linear scalability, high availability and fault tolerance
+
 **Note**: You can run your Apache Spark applications on YugaByte DB
 
 YugaByte DB is driver compatible with Apache Cassandra CQL and Redis - you can run existing applications written using existing open-source client drivers.
