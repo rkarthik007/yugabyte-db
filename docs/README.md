@@ -1,6 +1,13 @@
-# YugaByteDB Docs
------------------
+# YugaByteDB Doc
+------------------------
 
-These are various documents for committers and contributors working on the codebase.
+The documents in this directory are primarily meant for folks:
+- trying to understand internals of YugaByte in detail
+- folks working on the codebase
+- contributors exchanging design ideas
 
-If you are interested in using YugaByteDB, please check the [docs on our website](https://docs.yugabyte.com/).
+If you are looking for docs on how to use YugaByteDB, please check our [website docs](https://docs.yugabyte.com/).
+
+When in doubt, please ask us in one of our community channels:
+- [Forum](https://forum.yugabyte.com/)
+- [Gitter Chat](https://gitter.im/YugaByte/Lobby)
